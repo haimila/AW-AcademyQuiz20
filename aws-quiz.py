@@ -38,7 +38,7 @@ def kysymys1():
             print("Wrong answer!")
             break
 
-def kysymys1():
+def kysymys2():
     global pisteet
     while True:
         print("Which of these is EC2 part of?")
@@ -56,16 +56,24 @@ def kysymys1():
             print("Wrong answer!")
             break
 
+
 pelitila = True
+intro()
 
 while pelitila:
     pisteet = 0
 
-    intro()
     kysymys1()
     kysymys2()
 
-    break
+    print(f"You scored {pisteet} points.")
+    uusiks = input("Do you want to play again Y/N?")
+
+    if uusiks[0].lower() == "y":
+        continue
+
+    else:
+        break
 
 
 
