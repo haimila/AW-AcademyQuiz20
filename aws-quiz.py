@@ -2,23 +2,19 @@ def intro():
     global pelitila
     while True:
 
-        try:
+        print("Welcome to AWS trivia!")
+        pelataanko = input("Do you want to start the game Y/N?")
 
-            print("Welcome to AWS trivia!")
-            pelataanko = input("Do you want to start the game Y/N?")
+        if pelataanko[0].lower() == "y":
+            break
 
-        except:
-
-            print("Input either Y to start or N to quit!")
-            continue
+        elif pelataanko[0].lower() == "n":
+            pelitila = False
+            break
 
         else:
-            if pelataanko[0].lower() == "y":
-                break
-
-            elif pelataanko[0].lower() == "n":
-                pelitila = False
-                break
+            print("Input either Y to start or N to quit!")
+            continue
 
 def kysymys1():
     global pisteet
