@@ -60,6 +60,7 @@ def kysymys2():
 pelitila = True
 intro()
 
+intro()
 while pelitila:
     pisteet = 0
 
