@@ -38,7 +38,7 @@ def kysymys1():
             print("Wrong answer!")
             break
 
-def kysymys1():
+def kysymys2():
     global pisteet
     while True:
         print("Which of these is EC2 part of?")
@@ -58,10 +58,10 @@ def kysymys1():
 
 pelitila = True
 
+intro()
 while pelitila:
     pisteet = 0
 
-    intro()
     kysymys1()
     kysymys2()
 
