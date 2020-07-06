@@ -4,12 +4,12 @@ def intro():
 
         try:
 
-            print("Welcome to AWS trivia!")
+            print("Welcome to AWS trivia!\n")
             pelataanko = input("Do you want to start the game Y/N?")
 
         except:
 
-            print("Input either Y to start or N to quit!")
+            print("Input either Y to start or N to quit!\n")
             continue
 
         else:
@@ -23,7 +23,7 @@ def intro():
 def kysymys1():
     global pisteet
     while True:
-        print("Which of these services is global? Choose A, B, or C.")
+        print("Which of these services is global? Choose A, B, or C.\n")
         print("A) EC2")
         print("B) IAM")
         print("C) VPC")
@@ -41,7 +41,7 @@ def kysymys1():
 def kysymys2():
     global pisteet
     while True:
-        print("Which of these is EC2 part of?")
+        print("Which of these is EC2 part of?\n")
         print("A) IaaS")
         print("B) PaaS")
         print("C) SaaS")
