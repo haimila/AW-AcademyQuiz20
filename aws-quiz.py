@@ -2,7 +2,7 @@ def intro():
     global pelitila
     while True:
 
-        print("Welcome to AWS trivia!")
+        print("Welcome to AWS trivia!\n")
         pelataanko = input("Do you want to start the game Y/N?")
 
         if pelataanko[0].lower() == "y":
@@ -13,13 +13,14 @@ def intro():
             break
 
         else:
-            print("Input either Y to start or N to quit!")
+
+            print("Input either Y to start or N to quit!\n")
             continue
 
 def kysymys1():
     global pisteet
     while True:
-        print("Which of these services is global? Choose A, B, or C.")
+        print("Which of these services is global? Choose A, B, or C.\n")
         print("A) EC2")
         print("B) IAM")
         print("C) VPC")
@@ -37,7 +38,7 @@ def kysymys1():
 def kysymys2():
     global pisteet
     while True:
-        print("Which of these is EC2 part of?")
+        print("Which of these is EC2 part of?\n")
         print("A) IaaS")
         print("B) PaaS")
         print("C) SaaS")
@@ -64,7 +65,7 @@ while pelitila:
     kysymys2()
 
     print(f"You scored {pisteet} points.")
-    uusiks = input("Do you want to play again Y/N?")
+    uusiks = input("Do you want to play again Y/N?\n")
 
     if uusiks[0].lower() == "y":
         continue
